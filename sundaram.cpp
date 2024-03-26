@@ -2,9 +2,8 @@
 #include "sundaram.h"
 
 std::vector<int> sieve(int n) {
-    std::vector<int> primes;
+    std::vector<int> primes, mass(2*n+2,0);
     int k;
-    std::vector<int>mass(2*n+2,0);
     mass[0]=1;
     for(int i=1;i<=(sqrt(2*n+1)-1)/2;i++)
     {
