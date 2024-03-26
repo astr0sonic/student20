@@ -1,4 +1,5 @@
 #include "max_value.h"
+#include<iostream>
 using namespace std;
 
 double calculateMaxValue(double* nums, int n) {
@@ -22,18 +23,18 @@ double calculateMaxValue(double* nums, int n) {
             }
 //            char znak1, znak2;
 //            int last1, last2;
-//            for (int j = 0; j < 8; j++) {
-//                if (var[j] <= dig[0]) {
+            for (int j = 0; j < 8; j++) {
+                if (var[j] <= dig[0]) {
 //                    last1 = j / 4;
 //                    znak1 = znak[j % 4];
-//                    dig[0] = var[j];
-//                }
-//                if (var[j] >= dig[1]) {
+                    dig[0] = var[j];
+                }
+                if (var[j] >= dig[1]) {
 //                    last2 = j / 4;
 //                    znak2 = znak[j % 4];
-//                    dig[1] = var[j];
-//                }
-//            }
+                    dig[1] = var[j];
+                }
+            }
 //            ans[0].push_back(znak1);
 //            ans[1].push_back(znak2);
 //            pos[0].push_back(last1);
@@ -59,5 +60,5 @@ double calculateMaxValue(double* nums, int n) {
 //        }
 //    }
 //    cout << "=" << dig[1];
-    return dig[0];
+    return dig[1];
 }
