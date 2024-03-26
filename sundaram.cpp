@@ -22,7 +22,7 @@ std::vector<int> sieve(int n) {
     }
     for(int i=0;i<n;i++)
     {
-        if(mass[i]==0)
+        if(mass[i]==0&&i<=n)
         {
             primes.push_back(i*2+1);
         }
