@@ -46,7 +46,6 @@ bool checkBrackets(const std::string& s) {
             }
             if(!did)
             {
-                cout<<"0\n";
                 return 0;
             }
             continue;
@@ -54,11 +53,10 @@ bool checkBrackets(const std::string& s) {
     }
     if(!now.empty())
     {
-        cout<<"0\n";
+        return 0;
     }
     else
     {
-        cout<<"1\n";
+        return 1;
     }
-    return true;
 }
