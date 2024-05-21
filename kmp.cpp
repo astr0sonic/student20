@@ -16,7 +16,7 @@ vector <int> pref_func(string s) {
 }
 
 std::vector<int> getIndices(const std::string& my_template, const std::string& text) {
-    std::vector<int> result(2, 0);
+    std::vector<int> result;
     string new_string = my_template + '#' + text;
     vector <int> prf = pref_func(new_string);
     for (int i = my_template.size() + 1; i < new_string.size(); i++) {
