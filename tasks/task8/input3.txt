@@ -1,2 +1,0 @@
-image.PnG, document.PDF, archive.ZIP, photo.jpg
-.jpg
